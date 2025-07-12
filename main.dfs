@@ -1,0 +1,7 @@
+event<Join>(){
+	player.sendMessage(1+test(2,5,6));	
+}
+
+func<test>(a, b, c){
+ 	return a*b+c;
+}
