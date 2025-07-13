@@ -1,0 +1,50 @@
+{
+  "code":{
+    "Join": {
+        "body": [
+            {
+                "action": "call",
+                "data": {
+                    "args": [
+                        [
+                            "+",
+                            1,
+                            {
+                                "action": "call",
+                                "data": {
+                                    "args": [
+                                        2,
+                                        5
+                                    ],
+                                    "module": "code",
+                                    "name": "test"
+                                }
+                            }
+                        ]
+                    ],
+                    "module": "code",
+                    "name": "sendMessage"
+                }
+            }
+        ],
+        "params": {}
+    },
+    "test": {
+        "body": [
+            {
+                "return": [
+                    "*",
+                    "a",
+                    "b"
+                ]
+            }
+        ],
+        "params": {
+            "a": null,
+            "b": null
+        }
+    }
+},
+  "cloud": {},
+  "imports": []
+}
